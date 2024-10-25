@@ -106,7 +106,10 @@ REM Step 6: Create Vite config file using a temporary file
     echo     alias: {
     echo       '@': fileURLToPath^(new URL^('./src', import.meta.url^)^)
     echo     }
-    echo   }
+    echo   },
+    echo  optimizeDeps: {
+    echo     entries: [],
+    echo        }
     echo }^);    
 ) > "%TEMP_FILE%"
 
